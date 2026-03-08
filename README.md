@@ -27,32 +27,19 @@ npx playwright install
 # Run Tests
 
 Run all tests:
+npx playwright test
 
-npm test
+To run only ui tests
+npx playwright test --ui
+
+To run only api tests
+npx playwright test --api
 
 ---
 
 # View HTML Report
 
-npm run report
-
----
-
-# Project Structure
-
-tests/
-  api/
-    petstore.spec.js
-  ui/
-    login.spec.js
-
-pages/
-  LoginPage.js
-
-docs/
-  test-design.md
-
-playwright.config.js
+npx playwright show-report
 
 ---
 
