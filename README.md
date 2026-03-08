@@ -37,7 +37,7 @@ npx playwright test --api
 
 ---
 
-# View HTML Report
+# View Report
 
 npx playwright show-report
 
