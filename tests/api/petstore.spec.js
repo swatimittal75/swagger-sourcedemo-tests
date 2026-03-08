@@ -5,7 +5,7 @@ const baseURL = 'https://petstore.swagger.io/v2';
 test('Create → Get → Delete → Verify Deletion (single test)', async ({ request }) => {
   const petId = Date.now();
 
-  // 1️⃣ POST - create pet
+  // POST - create pet
   const createResponse = await request.post(`${baseURL}/pet`, {
     data: {
       id: petId,
