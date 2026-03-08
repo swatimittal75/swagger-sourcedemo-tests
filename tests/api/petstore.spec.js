@@ -2,9 +2,9 @@ import { test, expect } from '@playwright/test';
 
 const baseURL = 'https://petstore.swagger.io/v2';
 
-test('Create → Get → Delete → Verify Deletion (single test)', async ({ request }) => {
+test('Create a pet using POST → verify creation using GET(200) → Delete pet → Verify Deletion using GET(404)', async ({ request }) => {
   const petId = Date.now();
-
+  
   // POST - create pet
   const createResponse = await request.post(`${baseURL}/pet`, {
     data: {
